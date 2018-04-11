@@ -5,6 +5,7 @@
   color: #08157f;
   padding-left: 60px;
 }
+
 .myname,
 .nav-color {
   color: #08157f;
@@ -28,8 +29,7 @@
   width: 100%;
 }
 
-.dorian {
-}
+.dorian {}
 
 .mypic1 {
   text-align: center;
@@ -40,11 +40,45 @@ body {
   color: #08157f;
 }
 
+.delay1 {
+  animation-delay: .05s;
+  animation-timing-function: ease-in;
+}
+
+.delay2 {
+  animation-delay: .25s;
+  animation-timing-function: ease-in;
+}
+
+.delay3 {
+  animation-delay: .45s;
+}
+
+/* @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.text-center {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+} */
+
+.portPics {}
+
 .mainpic {
   /* background-color: #18bc9c; */
   padding-bottom: 10px;
   padding-top: 15px;
-
   background-repeat: no-repeat;
 }
 
@@ -67,7 +101,9 @@ body {
   padding-right: 90px;
   padding-bottom: 90px;
   margin-bottom: 40px;
+  margin-top: -2px;
 }
+
 h1 {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -79,10 +115,11 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-.container-fluid > .navbar-collapse,
-.container-fluid > .navbar-header,
-.container > .navbar-collapse,
-.container > .navbar-header {
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 15px;
@@ -108,6 +145,8 @@ a.port-nav {
   font-size: 20px;
 }
 
+.headingText {}
+
 .maintext {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -115,7 +154,8 @@ a.port-nav {
   font-weight: bold;
   /* text-shadow: 3px 1px 1px #000; */
   margin-bottom: -20px;
-  padding-top: 130px;
+  /* padding-top: 130px; */
+  padding-top: 87px;
 }
 
 .fluid-container.mainpic {
@@ -123,16 +163,19 @@ a.port-nav {
   max-width: 100%;
   max-height: 100%;
   padding-bottom: 1px;
+  background-size: cover;
 }
 
 .fluid-container.footer {
   background-color: #08157f;
   padding-bottom: 50px;
 }
+
 img {
   width: 250px;
   height: 250px;
 }
+
 .img-with-text {
   text-align: justify;
   width: 250px;
@@ -174,6 +217,7 @@ h4 {
   margin-bottom: 120px;
   padding-top: 40px;
 }
+
 h5 {
   color: w#08157f;
   font-size: 34px;
@@ -220,13 +264,162 @@ iframe {
 .blue-bckd {
   background-color: #08157f;
 }
+
 .blue-bckd2 {
   background-color: white;
 }
+
 .about-col {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .navbar-default-brand-color {
   color: red;
+}
+
+.portCircle {}
+
+/* <======================iPad===========================> */
+
+@media only screen and (max-width: 768px) {
+  .profilepic {
+    /* height: 80%; */
+    width: 76%;
+    margin-left: 84px;
+    margin-top: 41px;
+  }
+  .maintext {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    /* text-shadow: 3px 1px 1px #000; */
+    margin-bottom: -20px;
+    /* padding-top: 130px; */
+    padding-top: 87px;
+    margin-top: -61px;
+  }
+}
+
+/* <================small iPhone and iPhone X==============> */
+
+@media only screen and (max-width: 375px) {
+  .profilepic {
+    /* height: 80%; */
+    width: 76%;
+    margin-left: 39px;
+    margin-top: 2px;
+  }
+  .maintext {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    /* text-shadow: 3px 1px 1px #000; */
+    margin-bottom: -20px;
+    /* padding-top: 130px; */
+    padding-top: 87px;
+    margin-top: -61px;
+  }
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 4px;
+    padding-top: 27px;
+  }
+  .myname {
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800px;
+    color: #08157f;
+    padding-left: 0px;
+  }
+  .hamburger {
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .about-col {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .headingText {
+    margin-left: 18px;
+  }
+  .allPics {
+    margin-left: -32px;
+  }
+  a {}
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
 }

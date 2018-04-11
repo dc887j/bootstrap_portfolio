@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dc887j/bootstrap_portfolio.git"
+  },
+  "keywords": [
+    "animations"
+  ],
+  "author": "Dorian Crawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dc887j/bootstrap_portfolio/issues"
+  },
+  "homepage": "https://github.com/dc887j/bootstrap_portfolio#readme",
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  }
+}
